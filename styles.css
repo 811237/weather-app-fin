@@ -1,0 +1,135 @@
+/*KEYFRAMES*/
+@keyframes input-group-btn-hover {
+    from{}
+    to{background-color: rgb(54, 144, 54);}
+}
+
+@keyframes input-group-btn-active {
+    from{background-color: rgb(54, 144, 54);}
+    to{background-color: rgb(54, 104, 54);}
+}
+
+/*STYLES*/
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+main {
+    position: relative;
+    background-color: rgb(54, 54, 54);
+    width: 512px;
+    height: 448px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(64, 64, 64),
+                -10px 10px 15px rgb(64, 64, 64),
+                10px -10px 15px rgb(64, 64, 64),
+                -10px -10px 10px rgb(64, 64, 64);
+}
+
+.main-container {
+    padding: 5px 15px;
+    color: rgb(274, 274, 274);
+}
+
+.main-container:nth-child(1) {
+    border-bottom: 3px solid rgba(124, 124, 124, .3);
+}
+
+.main-container ul {
+    list-style: none;
+    padding-left: 0!important;
+}
+
+.forecast-temperature {
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+}
+
+.forecast-temperature-max {
+    border-radius: 5px;
+    padding: 0 .15em;
+    background-color: rgb(84, 84, 84);
+    color: rgb(226, 144, 34);
+    box-shadow: .1em .1em rgb(84, 84, 84),
+                -.1em .1em rgb(84, 84, 84), 
+                .1em -.1em rgb(84, 84, 84), 
+                -.1em -.1em rgb(84, 84, 84);
+}
+
+.forecast-temperature-min {
+    padding-right: .15em;
+    color: rgb(228, 186, 132);
+}
+
+#input-group-btn {
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(54, 184, 54);
+    padding: 0 15px;
+    width: 25%;
+    min-width: 76px;
+}
+
+#input-group-btn:hover {
+    animation: input-group-btn-hover .3s forwards;
+}
+
+#input-group-btn:active {
+    animation: input-group-btn-active 0s forwards;
+}
+
+#weekday {
+    border-radius: 5px;
+    padding: 0 .33em;
+    background-color: rgb(34, 34, 34);
+}
+
+#time {
+    border-radius: 5px;
+    padding: 0 .33em;
+    background-color: rgb(34, 34, 34);
+    color: rgb(226, 54, 34);
+}
+
+#sky-type {
+    border-radius: 5px;
+    padding: 0 .33em;
+    background-color: rgb(34, 34, 34);
+    color: rgb(54, 184, 234);
+}
+
+#humidity {
+    border-radius: 5px;
+    padding: 0 .33em;
+    background-color: rgb(34, 34, 34);
+    color: rgb(224, 154, 34);
+}
+
+#wind {
+    border-radius: 5px;
+    padding: 0 .33em;
+    background-color: rgb(34, 34, 34);
+    color: rgb(214, 214, 44);
+}
+
+#forecast {
+    margin-top: 64px;
+}
+
+#forecast .col {
+    text-align: center;
+}
+
+#footer {
+    color: rgb(224, 224, 224);
+    margin-top: 25px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 512px) {
+    main {
+        width: 100%;
+    }
+}
