@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
             $('#forecast > .col:nth-of-type(1) > .abrv-weekday').html(k1);
-            $('#forecast > .col:nth-of-type(1) > canvas').html(`<img src='${response.data.condition.icon_url}'/>`);
+            $('#forecast > .col:nth-of-type(1) > .weather-img').html(`<img src='${response.data.condition.icon_url}' width='48px'/>`);
         })
         .catch(function(error) { 
             if (error.response?.status === 429) {
